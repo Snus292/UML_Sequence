@@ -1,0 +1,11 @@
+@startuml
+actor Bob #red
+' "единственная разница между actor"
+' "и participant - это разная форма отображения"
+participant Alice
+participant ""
+
+Alice->Bob:Authenthication Request
+Bob->Alice: Authenthication Response
+Bob->L: Log transaction
+@enduml
